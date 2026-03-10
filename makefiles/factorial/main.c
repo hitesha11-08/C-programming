@@ -2,7 +2,7 @@
 #include"fact.h"
 int main(){
 int n=5;
-printf("the factorialis:%d",factorial(n));
+printf("the factorial is:%d",factorial(n));
 return 0;
 }
 
