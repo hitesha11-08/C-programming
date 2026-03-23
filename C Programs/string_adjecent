@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    
+    char a[]="abcuudaaaa";
+    
+    for(int i=0;a[i]!='\0';i++)
+    {
+        int count=1;
+       
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+            {
+                int j=i+1;
+                while(a[i]==a[j]&&a[j]!='\0')
+                {
+                    count++;
+                    j++;
+                }
+               if(count>1)
+               {
+                   int k=0;
+                   while(k<count)
+                   {
+                   printf("%c",a[i]);
+                   k++;
+                   }
+               }
+            }
+        else
+           {
+                printf("%c",a[i]);
+           }
+           i+=count-1;
+        }
+        
+        
+    
+
+    return 0;
+}
