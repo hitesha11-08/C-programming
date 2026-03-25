@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int n, i;
+    scanf("%d %d", &n, &i);
+
+    n = n ^ (1 << i);
+
+    printf("Result = %d", n);
+    return 0;
+}
