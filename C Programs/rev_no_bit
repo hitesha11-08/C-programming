@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    unsigned int num = 5; // 00000101
+    unsigned int rev = 0;
+    int i;
+
+    for(i = 0; i < 8; i++) {
+        rev = rev << 1;
+        rev |= (num & 1);
+        num = num >> 1;
+    }
+
+    printf("Reversed Bits = %u", rev);
+    return 0;
+}
